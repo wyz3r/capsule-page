@@ -1,0 +1,54 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+  background-color: #142024;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+$fontTitle : 3.5rem;
+$fontSubtitle: 2.6rem; 
+$fontSubtitle3:1.9rem; 
+$fontSize2:  1.8rem;
+$fontInfo2: 1.6rem;
+$fontInfo: 1.2rem;
+$fontInfobrian: 1.1rem;
+
+$green: rgb(0, 248, 164);
+$light-blue: rgb(10, 249, 247);
+$light-blue2: rgba(10, 249, 247, 0.3);
+$yellow: rgb(249, 231, 16);
+$orange: rgb(255, 145, 0);
+$kingblue: rgb(20, 100, 244);
+$blue: rgb(0, 207, 255);
+$pink: rgb(255, 33, 100);
+// @font-face {
+//   font-family: '8bit';
+//   src: url('../fonts/8BIt.TTF') format('TTF');
+//   font-weight: normal;
+//   font-style: normal;
+// };
+
+@import './menu.scss';
+@import './headerHome.scss';
+@import './brian.scss';
+@import './consumer.scss';
+@import './mota.scss';
+@import './explorer.scss';
+@import './descargables.scss';
+@import './graphs.scss';
+@import './wikimota.scss';
+@import './mediaQuerys.scss';
+
+
+

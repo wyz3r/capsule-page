@@ -1,0 +1,400 @@
+$inactiveColor: rgb(61, 89, 96);
+
+.brian-container {
+  width: 100%;
+.header-section{
+  position: relative;
+  // background-color: red;
+  .decoration-header{
+    width: 100%;
+  }
+  .elements-container{
+    position: relative;
+    z-index: 2;
+    padding: 0px 60px;
+    display: flex;
+    .text-header{
+      font-size: $fontSubtitle;
+      font-weight: 900;
+      margin-top: 70px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.line-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  svg{
+    position: absolute;
+    top: 0;
+    left: -9%;
+    width: 109% ;
+    min-height: 1920px;
+    min-height: 288px;
+    z-index: -1;
+  }
+}
+  
+  .brian-body {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    .ruleta{
+      padding-bottom: 60px;
+      .ruleta-title{
+        color: white;
+        font-size: $fontInfo2;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 900;
+        span{
+          color: $yellow;
+          
+        }
+      }
+      .buttons-content {
+        display: flex;
+        
+        .button-cuarto {
+          width: 250px;
+          height: 250px;
+          position: relative;
+          cursor: pointer;
+          &.uno{
+            border-right: 1px solid $yellow; 
+            border-bottom: 1px solid $yellow; 
+            .cuarto-circulo1 {
+              width: 100px; 
+              height: 100px; 
+              border: 0px solid #555; 
+              background: $yellow;
+             //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              border-radius: 100% 0 0 0;
+              position: absolute;
+              right: 0px;
+              bottom: 0px;
+              .num{
+                 transform: rotate(-45deg);
+                 color: $yellow;
+                 font-weight: 900;
+                 font-size: 2rem;
+                 margin-right: 52px;
+                 // width: 55px;
+              }
+            }
+            .circulo-exterior {
+              width: 248px; 
+              height: 248px; 
+              border-top: 2px solid $yellow;
+              border-left: 2px solid $yellow;             
+              border-radius: 100% 0 0 0;
+              //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              position: absolute;
+              right: 0px;
+              bottom: 0px;
+              .text{
+                color: white;
+                text-align: center;
+                position: absolute;
+                top: 100px;
+                left: -20px;
+                // background: red;
+                width: 300px;
+                
+              }
+              span{
+                font-size: 1rem;
+                font-weight: 400;
+              }
+              #info2{
+                div{
+                  // margin-left: 100px;
+                  // color: red;
+                  margin-top: -10px;
+                  
+                }
+              }
+            }
+            &.inactive {
+              border-right: 1px solid $inactiveColor; 
+              border-bottom: 1px solid $inactiveColor; 
+              .cuarto-circulo1 {
+                background: $inactiveColor;
+                .num{
+                   color: $inactiveColor;
+                }
+              }
+
+              .circulo-exterior {
+                border-top: 2px solid $inactiveColor;
+                border-left: 2px solid $inactiveColor;
+                .text{
+                  color: $inactiveColor;
+                }
+              }
+
+            }
+          }
+          &.dos{
+            border-left: 1px solid $yellow; 
+            border-bottom: 1px solid $yellow;
+            .cuarto-circulo2 {
+              width: 100px; 
+              height: 100px; 
+              border: 0px solid #555; 
+              background: $yellow;
+            //  -moz-border-radius: 0 100% 0 0;
+            //  -webkit-border-radius: 0 100% 0 0;
+              border-radius: 0 100% 0 0;
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              .num{
+                transform: rotate(45deg);
+                color: $yellow;
+                font-weight: 900;
+                font-size: 2rem;
+                margin-left: 52px;
+                // width: 55px;
+             }
+            }
+            .circulo-exterior {
+              width: 248px; 
+              height: 248px; 
+              border-top: 2px solid $yellow;
+              border-right: 2px solid $yellow;             
+              border-radius: 0 100% 0 0;
+              //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              .text{
+                color: white;
+                text-align: center;
+                position: absolute;
+                top: 100px;
+                left: -20px;
+                // background: red;
+                width: 300px;
+                
+              }
+              span{
+                font-size: 1rem;
+                font-weight: 400;
+              }
+            }
+            &.inactive {
+              border-left: 1px solid $inactiveColor; 
+              border-bottom: 1px solid $inactiveColor; 
+              .cuarto-circulo2 {
+                background: $inactiveColor;
+                .num{
+                   color: $inactiveColor;
+                }
+              }
+
+              .circulo-exterior {
+                border-top: 2px solid $inactiveColor;
+                border-right: 2px solid $inactiveColor;
+                .text{
+                  color: $inactiveColor;
+                }
+              }
+
+            }
+
+          }
+          &.tres{
+            border-top: 1px solid $yellow; 
+            border-right: 1px solid $yellow;
+            .cuarto-circulo3 {
+              width: 100px; 
+              height: 100px; 
+              border: 0px solid #555; 
+              background: $yellow;
+             //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              border-radius:  0 0 0 100%;
+              position: absolute;
+              right: 0px;
+              top: 0px;
+              .num{
+                transform: rotate(-135deg);
+                 color: $yellow;
+                 font-weight: 900;
+                 font-size: 2rem;
+                 margin-top: 56px;
+                 margin-right: 56px;
+             }
+            }
+            .circulo-exterior {
+              width: 248px; 
+              height: 248px; 
+              border-bottom: 2px solid $yellow;
+              border-left: 2px solid $yellow;             
+              border-radius: 0 0 0 100%;
+              //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              .text{
+                color: white;
+                text-align: center;
+                position: absolute;
+                top: 100px;
+                left: -20px;
+                // background: red;
+                width: 300px;
+                
+              }
+              span{
+                font-size: 1rem;
+                font-weight: 400;
+              }
+            }
+            &.inactive {
+              border-right: 1px solid $inactiveColor; 
+              border-top: 1px solid $inactiveColor; 
+              .cuarto-circulo3 {
+                background: $inactiveColor;
+                .num{
+                   color: $inactiveColor;
+                }
+              }
+
+              .circulo-exterior {
+                border-bottom: 2px solid $inactiveColor;
+                border-left: 2px solid $inactiveColor;
+                .text{
+                  color: $inactiveColor;
+                }
+              }
+            }
+            
+          }
+          &.cuatro{
+            border-left: 1px solid $yellow; 
+            border-top: 1px solid $yellow;
+            .cuarto-circulo4 {
+              width: 100px; 
+              height: 100px; 
+              border: 0px solid #555; 
+              background: $yellow;
+             //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              border-radius: 0 0 100% 0;
+              position: absolute;
+              // height: 20px;
+              .num{
+                transform: rotate(135deg);
+                 color: $yellow;
+                 font-weight: 900;
+                 font-size: 2rem;
+                //  margin-bottom: 150px;
+                //  margin-left: 120px;
+                 margin-top: 56px;
+                 margin-left: 56px;
+             }
+            }
+            .circulo-exterior {
+              width: 248px; 
+              height: 248px; 
+              border-bottom: 2px solid $yellow;
+              border-right: 2px solid $yellow;             
+              border-radius: 0 0 100% 0 ;
+              //  -moz-border-radius: 0 100% 0 0;
+             //  -webkit-border-radius: 0 100% 0 0;
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              .text{
+                color: white;
+                text-align: center;
+                position: absolute;
+                top: 100px;
+                left: -20px;
+                // background: red;
+                width: 300px;
+                
+              }
+              span{
+                font-size: 1rem;
+                font-weight: 400;
+              }
+            }
+            &.inactive {
+              border-left: 1px solid $inactiveColor; 
+              border-top: 1px solid $inactiveColor; 
+              .cuarto-circulo4 {
+                background: $inactiveColor;
+                .num{
+                   color: $inactiveColor;
+                }
+              }
+
+              .circulo-exterior {
+                border-bottom: 2px solid $inactiveColor;
+                border-right: 2px solid $inactiveColor;
+                .text{
+                  color: $inactiveColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .concept-container{
+      color: white;
+      margin-left: 100px;
+      .concept-card {
+        // padding: 15px;
+        .idea{
+          color: $yellow;
+          font-weight: 900;
+          font-size: $fontInfo2;
+        }
+        .description{
+          margin-top: 20px;
+          font-size: 1rem;
+          
+        }
+        .example-container{
+          margin-top: 20px;
+          font-size: 1rem;
+         
+          .example-info{
+            span{
+              display: block;
+              color: $yellow;
+              font-weight: 900;
+              margin-bottom: 15px;
+            }
+          }
+          .example-image{
+            margin-top: 20px;
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

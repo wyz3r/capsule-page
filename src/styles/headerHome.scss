@@ -1,0 +1,362 @@
+.home-container{
+  .headerHome {
+    width: 100%;
+    
+    .image-container{
+      
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      .imagen{
+        // object-fit: fill;
+        height: auto;
+        width: 100%;
+      }
+      // margin-top: 50px;
+      .texto-header{
+        width: 100%;
+        max-width: 1200px;
+        font-weight: 900;
+        font-size: 4rem;
+        position: absolute;
+        top: 80px;
+        text-align: center;
+        .blue{
+          color: $light-blue;
+        }
+      }
+      div{
+        color: white;
+        text-align: center;
+        font-size: $fontSize2;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    }
+  }
+  .section1 {
+    width: 100%;
+    margin-top: 110px;
+    position: relative;
+    .g1{
+      position: absolute;
+      left: -150px;
+      top: -40px;
+    }
+    .g2{
+      position: absolute;
+      left: -150px;
+    }
+   
+    .content{
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      right: 0px;
+      overflow: hidden;
+      bottom: 0;
+      .g3 {
+        position: absolute;
+        right: -180px;
+        bottom: 0;
+      }
+    }
+    .g4{
+      position: absolute;
+      left: -160px;
+      bottom: -120px;
+    }
+
+    .deco1{
+      width: 100%;
+      z-index: 9;
+      position: absolute;
+    }
+    .deco2{
+      margin-bottom: 50px;
+    }
+    .section1-content{
+      max-width: 1200px;
+      margin: auto;
+      z-index: 10;
+      position: relative;
+      display: flex;
+      // margin-top: 100px;
+      flex-direction: column;
+      
+      
+      .title{
+        color: white;
+        position: relative;
+        font-weight: 900;
+        // background: red;
+        text-align: left;
+        font-size: $fontTitle;
+        font-family: 'Montserrat';
+        
+      }
+      .info-content {
+        // background: red;
+        color: white;
+        width: 100%;
+        margin-top: 180px;
+        margin-bottom: 50px;
+        .info{
+          display: flex;
+          flex-direction: column;
+          &.left{
+            .info-title{
+              font-size: $fontSubtitle;
+              font-family: 'Montserrat';
+              color: white;
+              font-weight: 900;
+              display: flex;
+              .image{
+               width: 51px;
+              //  position: absolute;
+               margin-top: -24px;
+              }
+              .texto{
+                margin-left: 0px;
+              }
+            }
+            .info-body{
+              font-size: $fontInfo;
+              width: 55%;
+              margin-top: -20px;
+              margin-left: 65px;
+            }
+          }
+          &.right{
+            text-align: right;
+            align-items: flex-end;
+            position: relative;
+            // background: red;
+            
+            .info-title {
+              font-size: $fontSubtitle;
+              font-family: 'Montserrat';
+              color: white;
+              font-weight: 900;
+              display: flex;
+
+              .image{
+               width: 51px;
+              //  position: absolute;
+               margin-top: -24px;
+              }
+              .texto{
+                margin-right: 2px;
+              }
+            }
+            .info-body{
+              // width: 100%;
+              font-size: $fontInfo;
+              // padding: 40px;
+              margin: 35px;
+              width: 55%;
+              margin-top: -20px;
+              margin-right: 65px;
+              // background: blue;
+            }
+          }          
+        }
+        
+      }
+    }
+    
+  }
+  .section2{
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('../images/backgroundescalera.png');
+    background-size: cover;
+    .g5{
+      width: 450px;
+      position: absolute;
+      left: -250px;
+      top: -40px;
+    }
+    .content-g6{
+      position: absolute;
+      right: 0px;
+      bottom: 180px;
+      overflow: hidden;
+      z-index: 10;
+      width: 250px;
+      height: 250px;
+      .g6{
+        width: 250px;
+        position: absolute;
+        right: -120px;
+        bottom: 0px;
+       
+      }
+    }
+    
+    .section2-intro{
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-size: $fontInfo2;
+      margin-bottom: 50px;
+      .label-green{
+        color: $green;
+      }
+    }
+    .vision{
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 35px;
+      .visi{
+        font-size: 5.3rem;
+        font-weight: 900;
+        color: rgba(255,255,255,.1)
+      }
+      .vision-title{
+        font-size: $fontSubtitle3;
+        font-weight: 900;
+        margin-top: -55px;
+        &.green{
+          color: $green;
+        }
+        &.light-blue{
+          color: $light-blue;
+        }
+      }
+      .vision-body{
+        font-size: $fontInfo;
+      }
+      .section-face{
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+        width: 350px;
+        color: black;
+        background: $green;
+        &.blue{
+        background: $light-blue2;
+
+        }
+      }
+    }
+    
+
+  }
+  .section3{
+    color: white;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 50px;
+    .g7{
+      position: absolute;
+      width: 350px;
+      left: -180px;
+      top: 120px;
+    }
+    .content-g89{
+      position: absolute;
+      width: 300px;
+      height: 350px;
+      right: 0px;
+      bottom: 150px;
+      overflow: hidden;
+      .g8{
+        position: absolute;
+        width: 300px;
+        right: -160px;
+        top: 0px;
+      }
+      .g9{
+        position: absolute;
+        width: 300px;
+        right: -160px;
+        bottom: 0px;
+      }
+    }
+    .section3-intro{
+      max-width: 1200px;
+      margin: auto;
+      .title{
+        font-size: $fontTitle;
+        font-weight: 900;
+      }
+      .subtitle{
+        font-size: $fontSubtitle;
+        font-weight: 900;
+        max-width: 600px;
+      }
+    }
+    .fases-container{
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 50px;
+    
+      .yellow{
+        a{
+          color: $yellow;
+          text-decoration: none;
+        }
+        
+      }
+      .pink{
+        a{
+          color: $pink;
+          text-decoration: none;
+        }
+        
+      }
+      .kingblue{
+       
+        a{
+          color: $kingblue;
+          text-decoration: none;
+        }
+      }
+      .orange{
+       
+        a{
+          color: $orange;
+          text-decoration: none;
+        }
+        
+      }
+      .fase-card{
+        display: flex;
+        .body-card{
+          margin-left: 15px;
+          margin-top: 35px;
+          .title-card{
+            // color: $yellow;
+            font-size: $fontSubtitle3;
+            font-weight: 800;
+          }
+          .text-card{
+            width: 400px;
+            font-size: $fontInfo;
+          }
+        }
+        &.right{
+          flex-direction: row-reverse;
+          .body-card{
+            margin-right: -25px;
+            margin-top: 35px;
+            .title-card{
+              font-size: $fontSubtitle3;
+              font-weight: 800;
+            }
+            .text-card{
+              font-size: $fontInfo;
+            }
+          }
+        }
+      }
+    }
+  }
+}

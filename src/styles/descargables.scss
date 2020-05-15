@@ -1,0 +1,152 @@
+.descargables-container{
+  .section{
+    color: white;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    .g7{
+      position: absolute;
+      width: 350px;
+      left: -180px;
+      top: 120px;
+    }
+    .content-g89{
+      position: absolute;
+      width: 300px;
+      height: 350px;
+      right: 0px;
+      bottom: 150px;
+      overflow: hidden;
+      .g8{
+        position: absolute;
+        width: 300px;
+        right: -160px;
+        top: 0px;
+      }
+      .g9{
+        position: absolute;
+        width: 100px;
+        right: -160px;
+        bottom: -90px;
+      }
+    }
+    .section-intro{
+      max-width: 1200px;
+      margin: auto;
+      .title{
+        font-size: $fontTitle;
+        font-weight: 900;
+      }
+      .subtitle{
+        font-size: $fontSubtitle;
+        font-weight: 900;
+        max-width: 600px;
+      }
+    }
+    .fases-container {
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 50px;
+    
+      .yellow{
+        color: $yellow;
+        a{
+          color: $yellow;
+          text-decoration: none;
+        }
+        
+      }
+      .pink{
+        color: $pink;
+        a{
+          color: $pink;
+          text-decoration: none;
+        }
+        
+      }
+      .kingblue{
+        color: $kingblue;
+        a{
+          color: $kingblue;
+          text-decoration: none;
+        }
+      }
+      .orange{
+        color: $orange;
+        a{
+          color: $orange;
+          text-decoration: none;
+        }
+        
+      }
+      .green{
+        color: $green;
+        a{
+          color: $green;
+          text-decoration: none;
+        }
+        
+      }
+      .fase-card{
+        display: flex;
+        .body-card{
+          margin-left: 15px;
+          margin-top: 35px;
+          .title-card{
+            // color: $yellow;
+            font-size: $fontSubtitle3;
+            font-weight: 800;
+          }
+          .text-card{
+            width: 400px;
+            .download-button{
+              padding: 10px;
+              text-align: center;
+              margin-top: 10px;
+              width: 350px;
+              color: black;
+              font-weight: 800;
+              a{
+                color: black;
+              }
+              &:hover{
+                cursor: pointer;
+              }
+             &.yellow{
+              background: $yellow;
+             }
+             &.orange{
+              background: $orange;
+             }
+             &.kingblue{
+              background: $kingblue;
+             }
+             &.pink{
+              background: $pink;
+             }
+             &.green{
+              background: rgb(0, 248, 164);
+             }
+             
+            }
+            font-size: $fontInfo;
+          }
+        }
+        &.right{
+          flex-direction: row-reverse;
+          .body-card{
+            margin-right: -25px;
+            margin-top: 35px;
+            .title-card{
+              font-size: $fontSubtitle3;
+              font-weight: 800;
+            }
+            .text-card{
+              font-size: $fontInfo;
+            }
+          }
+        }
+      }
+    }
+  }
+}

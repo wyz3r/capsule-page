@@ -1,0 +1,181 @@
+[
+  {
+    "title": "Layer",
+    "subtitle": "Producto",
+    "mainColor": "#FF2164",
+    "corredores": [
+      "Transparencia",
+      "Enhancement",
+      "Durabilidad",
+      "Transformación",
+      "Amplitud térmica",
+      "Conservación"
+    ],
+    "cases": [{
+        "corredores": [
+          "Transformación",
+          "Amplitud térmica"
+        ],
+        "figs": [{
+            "color": "#EF6FA0",
+            "fill": [0, 3, 6]
+          },
+          {
+            "color": "#FF2164",
+            "fill": [1, 4, 5, 7]
+          }
+        ],
+        "descriptions": [{
+            "title": "Idea 1",
+            "text": "Al abrirlo, la bebida conformada por diferentes componentes, se mezcla de manera óptima y se enfría de manera rápida para detonar mayor frescura"
+          }
+        ]
+      },
+      {
+        "corredores": [
+          "Transparencia",
+          "Durabilidad"
+        ],
+        "figs": [{
+            "color": "#FF2164",
+            "fill": [ 6, 7]
+          },
+          {
+            "color": "#EF6FA0",
+            "fill": [1, 4, 5, 8]
+          }
+        ],
+        "descriptions": [{
+          "title": "Idea 2",
+          "text": " Un envase de vidrio hecho para niños que tenga una película que blinde el producto ante caídas: beneficio de naturalidad y conservación del producto"
+        }]
+      }
+    ]
+  },
+  {
+    "title": "Layer",
+    "subtitle": "Consumidor",
+    "mainColor": "#FFDB00",
+    "corredores": [
+      "Portabilidad",
+      "Extensión de uso",
+      "Estética",
+      "Ludicidad",
+      "Almacenabilidad"
+    ],
+    "cases": [{
+        "corredores": [
+          "Portabilidad",
+          "Almacenabilidad"
+        ],
+        "figs": [{
+            "color": "#FFDB00",
+            "fill": [0, 3, 6]
+          },
+          {
+            "color": "#FFEA83",
+            "fill": [2, 4, 5, 7]
+          }
+        ],
+        "descriptions": [{
+            "title": "Idea 1",
+            "text": "Botellas de 2L-3L con asa para transportar y poder apilar/juntar una botella con otra"
+          },
+          {
+            "title": "Idea 2",
+            "text": "Botellas de 1litro tipo bolsa pouch hermética que se almacenan en una caja"
+          }
+        ]
+      },
+      {
+        "corredores": [
+          "Ludicidad",
+          "Estética"
+        ],
+        "figs": [{
+            "color": "#FFDB00",
+            "fill": [ 7, 6]
+          },
+          {
+            "color": "#FFEA83",
+            "fill": [2,4,5,8]
+          }
+        ],
+        "descriptions": [
+          {
+            "title": "Idea 1",
+            "text": "Empaques convirtiéndose en juguetes y además proporcionan experiencias virtuales a través del código QR"
+          },
+          {
+            "title": "Idea 2",
+            "text": "Agua en tetrapack, yogurt en pouch"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Layer",
+    "subtitle": "Sociedad",
+    "mainColor": "#0686cf",
+    "corredores": [
+      "Alianzas",
+      "Beneficios sociales"
+    ],
+    "cases": [{
+        "corredores": [
+          "Alianzas",
+          "Beneficios sociales"
+        ],
+        "figs": [{
+            "color": "#0686cf",
+            "fill": [0, 3, 6,7]
+          },
+          {
+            "color": "#5bb8ee",
+            "fill": [1, 4, 5, 8]
+          }
+        ],
+        "descriptions": [{
+            "title": "Idea 1",
+            "text": "Patrocinar el movimiento de tapas que existe en las escuelas"
+          },
+          {
+            "title": "Idea 2",
+            "text": "Bancas para las escuelas con materiales y botellas que ellos mismos reciclan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Layer",
+    "subtitle": "Planeta",
+    "mainColor": "#70a83b",
+    "corredores": [
+      "Reutilización/ Reciclabilidad",
+      "Impacto en el ecosistema"
+    ],
+    "cases": [{
+        "corredores": [
+          "Reutilización/Reciclabilidad",
+          "Impacto en el ecosistema"
+        ],
+        "figs": [{
+            "color": "#70a83b",
+            "fill": [0,3, 6,7]
+          },
+          {
+            "color": "#b4f378",
+            "fill": [1, 4, 5, 8]
+          }
+        ],
+        "descriptions": [{
+            "title": "Idea 1",
+            "text": "Campaña de comunicación del ciclo del pack: apertura de TCCC a las entrañas del proceso de fabricación, uso y deshecho del producto"
+          }
+        ]
+      }
+    ]
+  }
+]

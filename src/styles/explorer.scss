@@ -1,0 +1,168 @@
+.brian-container {
+  &.explorer {
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    &::after {
+      background-image: url('../images/gorange.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      content: '';
+      height: 450px;
+      position: absolute;
+      right: -200px;
+      top: -200px;
+      width: 450px;
+    }
+    .subtitle {
+      color: #fff;
+      font-size: $fontInfo;
+      font-weight: 500;
+      left: 170px;
+      padding: 0 60px;
+      position: absolute;
+      top: 120px;
+      strong {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.explorer-container {
+  overflow: hidden;
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.card-explorer {
+  position: relative;
+  &:nth-child(even) {
+    .card-content {
+      background: rgba(14, 21, 24, 0.7);
+      padding: 60px 0;
+      .card-body {
+        flex-direction: row-reverse;
+        .card-text {
+          text-align: right;
+          padding-left: 0px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .card-content {
+    color: $orange;
+    font-size: 1rem;
+    padding: 40px 0;
+    .card-body {
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%;
+      z-index: 9;
+      .cardImage {
+        height: 150px;
+        width: 150px;
+        // img {
+        //   object-fit: cover;
+        //   width: 100%;
+        // }
+      }
+      .card-text {
+        flex: 1 1 auto;
+        max-width: 950px;
+        padding-left: 15px;
+        h3 {
+          font-size: $fontSubtitle3;
+          font-weight: 500;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: $fontInfo;
+          margin: 0;
+          &.white-text {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-explorer {
+  &:nth-child(2) {
+    &::before {
+      background-image: url('../images/deco4.png');
+      background-repeat: no-repeat;
+      background-size: 100% 70%;
+      background-position: center;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -8;
+    }
+  }
+  &:nth-child(3) {
+    &::after {
+      background-image: url('../images/gorange.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      content: '';
+      height: 300px;
+      position: absolute;
+      right: -170px;
+      top: -100px;
+      width: 300px;
+    }
+  }
+  &:nth-child(4) {
+    &::after {
+      background-image: url('../images/gorange.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      content: '';
+      height: 300px;
+      position: absolute;
+      left: -150px;
+      top: -30px;
+      width: 300px;
+    }
+  }
+  &:nth-child(6) {
+    &::before {
+      background-image: url('../images/deco3.png');
+      background-repeat: no-repeat;
+      background-size: 100% 70%;
+      background-position: center;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -8;
+    }
+  }
+  &:nth-child(8) {
+    &::after {
+      background-image: url('../images/gorange.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      content: '';
+      height: 450px;
+      position: absolute;
+      left: -200px;
+      top: 50px;
+      width: 450px;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+.layer-container{
+  width: 96%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px;
+}
+
+.layerItem{
+  display: flex;
+  color: #FFF;
+  margin-bottom: 60px;
+  min-height: 200px;
+  .layerTitle{
+    font-size: $fontInfo2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .layerColumn{
+    background-color: #0e181b;
+    padding: 15px 10px;
+    margin: 0 7px;
+    &.layerMain{
+      flex: 0 1 160px;
+      position: relative;
+      .layerMainContent{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+      }
+      .layerMainFill{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 5px;
+      }
+      &:hover{
+        .layerMainFill{
+          opacity: .9;
+        }
+      }
+    }
+    &.laterCorredores{
+      flex: 0 1 180px;
+    }
+  }
+}
+
+.layerCorredoresItem{
+  display: flex;
+  padding: 5px 10px;
+  font-size: 12px;
+  align-items: center;
+  .layerIcon{
+    height: 28px;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.568);
+    padding: 8px 0;
+    margin-right: 10px;
+    svg{
+      width: auto;
+      height: 14px;
+      margin: auto;
+    }
+    &.layericonW{
+      flex: 0 1 20px;
+      svg{
+        
+        width: 12px;
+        height: auto;
+      }
+    }
+    
+  }
+}
+
+.layerItem{
+  .layerFig{
+    position: relative;
+    flex: 1 0 200px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: flex-start;
+    align-items: center;
+    .layerFigCont{
+      position: relative;
+      width: 160px;
+      height: 160px;
+      flex: 0 0 160px;
+      margin-right: 40px;
+    }
+  }
+}
+
+.figContent{
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 1;
+  gap: 1px;
+}
+
+.layerDescription{
+  flex: 1 0 auto;
+}
+
+.textLayer{
+  color: #FFF;
+  font-size: 16px;
+  opacity: 0;
+  span{
+    color: $pink;
+  }
+}
+
+.LayerCasos{
+  width: 100%;
+  margin-top: 40px;
+  .btnCaso{
+    margin: 8px auto;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #132025;
+    padding: 7px 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+      background-color: #132025;
+      border: 1px solid #132025 !important;
+    }
+  }
+}
+
+// animacion layer mota
+
+.layerFigAnimate{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(-100vh);
+}
+
+.layerFigAnimate-enter, .layerFigAnimate-appear{
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+.layerFigAnimate-enter-active, .layerFigAnimate-appear-active{
+  transform: translateY(0vh);
+  opacity: 1;
+  transition: transform 1000ms, opacity 500ms;
+}
+
+.layerFigAnimate-enter-done, .layerFigAnimate-appear-done{
+  transform: translateY(0vh);
+  opacity: 1;
+}
+
+.layerFigAnimate-exit {
+  opacity: 1;
+}
+.layerFigAnimate-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+  transition-delay: 0ms;
+}
+
+.layerTextAnimate{
+  opacity: 0;
+}
+
+.layerTextAnimate-enter, .layerTextAnimate-appear{
+  opacity: 0;
+}
+
+.layerTextAnimate-enter-active, .layerTextAnimate-appear-active{
+  opacity: 1;
+  transition:  opacity 1000ms;
+}
+
+.layerTextAnimate-enter-done, .layerTextAnimate-appear-done{
+  opacity: 1;
+}
+
+.layerTextAnimate-exit {
+  opacity: 1;
+}
+.layerTextAnimate-exit-active {
+  opacity: 0;
+  transition: opacity 0ms;
+  transition-delay: 0ms !important;
+}
+
+.gallery-container{
+  position: relative;
+  height: calc(70vh + 150px);
+  width: 90vh;
+  min-height: 500px;
+  margin: 40px auto;
+}
+
+.motaIntro{
+  max-width: 1000px;
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  font-size: $fontInfo;
+  .motaComplete{
+    flex: 1 0 100%;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 0 40px;
+  }
+  .motaSide{
+    flex: 1 0 50%;
+    padding: 0 20px;
+    margin:  20px auto;
+    ul{
+      text-decoration: none;
+      list-style: none;
+      li{
+        margin-bottom: 20px;
+        &::before {
+          content: "\2022";  
+          color: $pink; 
+          font-weight: bold; 
+          display: inline-block; 
+          width: 1.5em; 
+          margin-left: -1em; 
+        }
+        
+      }
+    }
+  }
+  .motaTitle{
+    font-size: $fontSubtitle3;
+    color: $pink;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  span{
+    color: $pink;
+  }
+  b{
+    color: $pink;
+  }
+}
+
+.motaPiramide{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  margin: auto;
+  width: 94%;
+  margin-top: 70px;
+  .piramideSide{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    min-height:  400px;
+    padding: 20px 0;
+    .piramideData{
+      height: 100%;
+    }
+    .piramideItem{
+      flex: 0;
+      display: flex;
+      position: relative;
+      align-items: center;
+      font-size: .9rem;
+      height: 25%; 
+      .title{
+        flex: 0 0 180px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        height: 80%;
+        border-left: 5px solid $pink;
+        padding-left: 15px;
+        
+      }
+      &:nth-child(1){
+        .title{
+          border-left: 5px solid #72a742;
+        }
+      }
+      &:nth-child(2){
+        .title{
+          border-left: 5px solid #1887cc;
+        }
+      }
+      &:nth-child(3){
+        .title{
+          border-left: 5px solid #fed931;
+        }
+      }
+      &:nth-child(4){
+        .title{
+          border-left: 5px solid $pink;
+        }
+      }
+      .sideText{
+        flex: 0 1 auto;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.motaNota{
+  font-size: .8rem;
+  color: #FFF;
+  // max-width: 500px;
+  width: 94%;
+  margin: auto;
+  text-align: left;
+}
+
+.primSideImg{
+  display: flex;
+  flex: 1 0 600px;
+  justify-content: center;
+  align-items: center;
+  .primImg{
+    flex: 1 0 90%;
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .motaPiramide{
+    flex-wrap: wrap;
+    .piramideSide{
+      flex-basis: 100%;
+    }
+  }
+  .layerItem{
+    .layerFig{
+      flex-wrap: wrap;
+      &>div{
+        flex: 0 0 100%;
+      }
+      .layerFigCont{
+        margin: auto;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,96 @@
+.consumer-container {
+  width: 100%;
+.header-section{
+  position: relative;
+  // background-color: red;
+  .decoration-header{
+    width: 100%;
+  }
+  .elements-container{
+    position: relative;
+    z-index: 2;
+    // position: absolute;
+    padding: 0px 60px;
+    display: flex;
+    .text-header{
+      font-size: $fontSubtitle;
+      font-weight: 900;
+      margin-top: 70px;
+      margin-left: 15px;
+    }
+  }
+}
+
+.line-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  svg{
+    position: absolute;
+    top: 0;
+    left: -9%;
+    width: 109% ;
+    min-height: 1920px;
+    min-height: 288px;
+    z-index: -1;
+  }
+}
+  .tabla-container{
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    color: white;
+    .tabla-card {
+      width: 50%;
+      padding: 20px;
+      .title{
+        font-size: $fontSize2;
+        font-weight: 900;
+        color: $kingblue;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        // margin: 15px;
+      }
+      .info{
+        // margin: 15px;
+        margin-bottom: 20px;
+        
+        font-size: $fontInfo;
+        font-weight: 400;
+        span{
+          font-weight: 900;
+          font-size: $fontInfo2;
+          color: $kingblue;
+        }
+      }
+      &.left {
+        background:rgba(14, 21, 24, 0.7);
+        
+      }
+      &.right{
+        background: $kingblue;
+        color: black;
+        .title{
+          font-size: $fontSize2;
+          font-weight: 900;
+          color: white;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          // margin: 15px;
+        }
+        .info{
+          
+          span{
+            font-weight: 900;
+            font-size: $fontInfo2;
+            color: white;
+          }
+        }
+
+      }
+    }
+  }
+}

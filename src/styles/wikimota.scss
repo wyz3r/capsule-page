@@ -1,0 +1,82 @@
+.wikimotaHeader-content {
+    height: 70px;
+    background: #00E085;
+    width: 100%;
+    color: white;
+    z-index: 1201;
+    position: fixed;
+    lex-shrink: 0;
+    text-transform: uppercase;
+    .title-wikimota{
+      margin: auto;
+      width: 250px;
+      font-size: 45px;
+      text-align: center;
+      height: 100%;
+      padding-top: 10px;
+    }
+}
+.drawer-menu{
+  width: 250px;
+  flex-shrink: 0;
+}
+.aux-drawermenu{
+  min-height: 64px;
+}
+.body-wikimota {
+  padding: 24px;
+  flex-grow: 1;
+  padding-top: 100px;
+  background: white;
+  .anchor{
+    float: left;
+    padding-right: 4px;
+  }
+  a.anchor {
+    color: inherit;
+    fill: #00E085;
+    text-decoration: none;
+    border-bottom: none;
+    
+  }
+
+  .text-content{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 1100px;
+    margin-left: 20px;
+
+  }
+  .gallery-content{
+    width: 650px;
+    margin: auto;
+   
+  }
+  .audios-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .macro-Texts{
+    margin-left: 20px;
+    .body-text{
+      max-width: 1100px;
+    }
+  }
+  .need-texts{
+    margin-left: 20px;
+    .body-text{
+      max-width: 1100px;
+    }
+  }
+  .videos-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    video{
+      margin-top: 20px;
+      width: 500px;
+    }
+  }
+}
